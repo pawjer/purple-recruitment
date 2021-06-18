@@ -12,7 +12,7 @@
 class FamilyLifeSimulation
   attr_reader :family, :timerange
 
-  def initialize(family, timerange:, randomize: true)
+  def initialize(family, timerange:, randomize: false)
     @family = family
     @timerange = timerange
     @randomize = randomize
