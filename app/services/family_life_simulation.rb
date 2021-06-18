@@ -1,7 +1,15 @@
+# frozen_string_literal: true
+
+# FamilyLifeSimulation simulates a PixelsFamily growth through the time. Counts the cycles depend on the given
+# time range and family.replication time
+# Use the service to check the family after a given time:
+#  FamilyLifeSimulation.new(PixelsFamily, timerange:, randomize:)
+#     - PixelsFamliy is a PixelsFamily object
+#     - timerange is a range of a time ex: 2.minutes
+#     - randomize is a boolean that adds additional randomization to the family growth process
+#       [check in the PixelsFamily model]
 
 class FamilyLifeSimulation
-  include PixelMultiplicationLogic
-
   attr_reader :family, :timerange
 
   def initialize(family, timerange:, randomize: true)
