@@ -16,11 +16,9 @@
 # Use :print to get an array of arrays of pixles
 
 class PixelsFamily
-  MAX_CYCLES = 100
-
   include PixelMultiplicationLogic
 
-  attr_reader :founders, :replication_time
+  attr_reader :founders, :replication_time, :members
 
   def initialize(founders, replication_time: 5)
     raise 'There should be at least two Pixels to start the family' if founders.size < 2
@@ -41,7 +39,7 @@ class PixelsFamily
     @members
   end
 
-  def family_size
+  def size
     @members.size
   end
 
