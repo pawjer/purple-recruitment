@@ -16,7 +16,7 @@
 
 - `ruby pixel_family_simulation.rb`
 
-#### To follow each step of family growth you could most be interested in the PixelsFamily model.
+#### To follow each step of family growth you could be most interested in the PixelsFamily model.
 - use `rails console`
 - create a family: 
    - `family = PixelsFamily.new([Pixel.new, Pixel.new])`
